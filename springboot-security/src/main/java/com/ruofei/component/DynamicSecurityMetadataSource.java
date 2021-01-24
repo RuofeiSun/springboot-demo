@@ -1,6 +1,7 @@
 package com.ruofei.component;
 
 import cn.hutool.core.util.URLUtil;
+import com.ruofei.service.DynamicSecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.web.FilterInvocation;

@@ -1,3 +1,4 @@
+/*
 package com.ruofei.component;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -15,12 +16,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+*/
 /**
  * @Author: srf
  * @Date: 2020/12/3 17:34
  * @description:
- */
-@Service
+ *//*
+
 public class MyUserDetailsService implements UserDetailsService {
 
     @Autowired
@@ -66,3 +68,4 @@ public class MyUserDetailsService implements UserDetailsService {
     }
 
 }
+*/
