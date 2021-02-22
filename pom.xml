@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springboot-security</module>
+        <module>springboot-juc</module>
+        <module>springboot-algorithm</module>
     </modules>
 
     <name>springboot-demo</name>
