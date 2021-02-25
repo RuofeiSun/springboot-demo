@@ -1,0 +1,40 @@
+project:
+  name: springboot-quartz
+  version: 1.0
+
+server:
+  port: 8080
+
+# 系统环境变量
+spring:
+  # mysql
+  datasource:
+    url: jdbc:mysql://47.75.245.206:3306/quartz?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    ##初始连接数，默认0
+    initialSize: 10
+    #最大连接数，默认8
+    maxActive: 30
+    #最小闲置数
+    minIdle: 10
+    #获取连接的最大等待时间，单位毫秒
+    maxWait: 60000
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 热部署开关
+  devtools:
+    restart:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+
+mybatis-plus:
+  global-config:
+    db-config:
+      field-strategy: not_empty
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+    map-underscore-to-camel-case: true   #数据库字段打开驼峰到下划线的映射
+  mapper-locations: classpath:mapper/*.xml

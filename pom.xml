@@ -11,6 +11,7 @@
         <module>springboot-security</module>
         <module>springboot-juc</module>
         <module>springboot-algorithm</module>
+        <module>springboot-quartz</module>
     </modules>
 
     <name>springboot-demo</name>
