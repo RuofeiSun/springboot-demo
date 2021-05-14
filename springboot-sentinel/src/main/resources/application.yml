@@ -1,0 +1,6 @@
+project:
+  name: springboot-sentinel
+  version: 1.0
+
+server:
+  port: 9090
